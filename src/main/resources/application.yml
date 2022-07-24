@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    first:
+      name: first_datasource
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://127.0.0.1:3306/zjjstudy?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    second:
+      name: second_datasource
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://127.0.0.1:3306/ggzy_xept_dev?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
